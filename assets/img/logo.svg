@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f2f6ff"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="24" y1="16" x2="112" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2EB88A"/>
+      <stop offset="1" stop-color="#4F7FFF"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#bgGrad)"/>
+  <!-- subtle inner ring -->
+  <circle cx="64" cy="64" r="48" fill="none" stroke="#e6eefc" stroke-width="2"/>
+  <!-- A mark: upward A with baseline bar -->
+  <path d="M28 92 L52 36 C54 32 60 32 62 36 L86 92" stroke="url(#mark)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M44 74 H84" stroke="#4F7FFF" stroke-width="10" stroke-linecap="round"/>
+  <!-- soft glow -->
+  <path d="M28 92 L52 36 C54 32 60 32 62 36 L86 92" stroke="#2EB88A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.15" filter="url(#soft)"/>
+</svg>
+
